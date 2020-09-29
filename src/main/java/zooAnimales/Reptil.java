@@ -41,7 +41,7 @@ public class Reptil extends Animal{
 		return "reptar";
 	}
 	
-	public Object crearIguana(String nombre, int edad, String genero) {
+	public Reptil crearIguana(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("humedal");
@@ -54,7 +54,7 @@ public class Reptil extends Animal{
 		return this;
 	}
 	
-	public Object crearSerpiente(String nombre, int edad, String genero) {
+	public Reptil crearSerpiente(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("jungla");

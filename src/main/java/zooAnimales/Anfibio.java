@@ -45,7 +45,7 @@ public class Anfibio extends Animal{
 		return "saltar";
 	}
 	
-	public Object crearRana(String nombre, int edad, String genero) {
+	public Anfibio crearRana(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("selva");
@@ -59,7 +59,7 @@ public class Anfibio extends Animal{
 		
 	}
 	
-	public Object crearSalamandra(String nombre, int edad, String genero) {
+	public Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("pradera");

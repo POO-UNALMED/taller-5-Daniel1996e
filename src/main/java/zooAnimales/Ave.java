@@ -38,7 +38,7 @@ public class Ave extends Animal{
 		return "volar";
 	}
 	
-	public Object crearHalcon(String nombre, int edad, String genero) {
+	public Ave crearHalcon(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("montañas");
@@ -50,7 +50,7 @@ public class Ave extends Animal{
 		return this;
 	}
 	
-	public Object crearaAguila(String nombre, int edad, String genero) {
+	public Ave crearaAguila(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("montañas");

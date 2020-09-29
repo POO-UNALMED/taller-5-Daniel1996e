@@ -18,7 +18,7 @@ public class Ave extends Animal{
 		increaseTotal();
 	}
 	
-	public Ave(String colorPlumas, String nombre, int edad, String habitat, String genero){
+	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas){
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat(habitat);
@@ -38,7 +38,7 @@ public class Ave extends Animal{
 		return "volar";
 	}
 	
-	public void crearHalcon(String nombre, int edad, String habitat, String genero) {
+	public void crearHalcon(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("montañas");
@@ -49,7 +49,7 @@ public class Ave extends Animal{
 		listado.add(this);
 	}
 	
-	public void crearaAguila(String nombre, int edad, String habitat, String genero) {
+	public void crearaAguila(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("montañas");

@@ -19,7 +19,7 @@ public class Anfibio extends Animal{
 		increaseTotal();
 	}
 	
-	public Anfibio(String colorPiel, boolean venenoso, String nombre, int edad, String habitat, String genero){
+	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso){
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat(habitat);
@@ -45,7 +45,7 @@ public class Anfibio extends Animal{
 		return "saltar";
 	}
 	
-	public void crearRana(String nombre, int edad, String habitat, String genero) {
+	public void crearRana(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("selva");
@@ -58,7 +58,7 @@ public class Anfibio extends Animal{
 		
 	}
 	
-	public void crearSalamandra(String nombre, int edad, String habitat, String genero) {
+	public void crearSalamandra(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("pradera");

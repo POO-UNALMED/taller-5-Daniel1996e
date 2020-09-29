@@ -41,7 +41,7 @@ public class Mamifero extends Animal{
 		this.patas = patas;
 	}
 	
-	public void crearCaballo(String nombre, int edad, String genero) {
+	public Object crearCaballo(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("pradera");
@@ -51,8 +51,9 @@ public class Mamifero extends Animal{
 		caballos ++;
 		increaseTotal();
 		listado.add(this);
+		return this;
 	}
-	public void crearLeon(String nombre, int edad, String genero) {
+	public Object crearLeon(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("selva");
@@ -62,6 +63,7 @@ public class Mamifero extends Animal{
 		leones ++;
 		increaseTotal();
 		listado.add(this);
+		return this;
 	}
 	
 	public static int cantidadMamiferos() {

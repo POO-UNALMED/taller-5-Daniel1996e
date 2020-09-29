@@ -41,7 +41,7 @@ public class Pez extends Animal{
 		return "nadar";
 	}
 	
-	public void crearSalmon(String nombre, int edad, String genero) {
+	public Object crearSalmon(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("oceano");
@@ -51,8 +51,9 @@ public class Pez extends Animal{
 		salmones ++;
 		increaseTotal();
 		listado.add(this);
+		return this;
 	}
-	public void crearBacalao(String nombre, int edad, String genero) {
+	public Object crearBacalao(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("oceano");
@@ -62,6 +63,7 @@ public class Pez extends Animal{
 		bacalaos ++;
 		increaseTotal();
 		listado.add(this);
+		return this;
 	}
 	
 	public static int cantidadPeces() {

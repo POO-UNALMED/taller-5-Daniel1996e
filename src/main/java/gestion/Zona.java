@@ -2,6 +2,11 @@ package gestion;
 import java.util.ArrayList;
 import java.util.List;
 import zooAnimales.Animal;
+import zooAnimales.Anfibio;
+import zooAnimales.Ave;
+import zooAnimales.Mamifero;
+import zooAnimales.Pez;
+import zooAnimales.Reptil;
 
 public class Zona {
 	private String nombre;

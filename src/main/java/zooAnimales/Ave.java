@@ -15,6 +15,7 @@ public class Ave extends Animal{
 	
 	public Ave(){
 		super();
+		listado.add(this);
 		increaseTotal();
 	}
 	
@@ -50,7 +51,7 @@ public class Ave extends Animal{
 		return this;
 	}
 	
-	public Ave crearaAguila(String nombre, int edad, String genero) {
+	public Ave crearAguila(String nombre, int edad, String genero) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat("montañas");

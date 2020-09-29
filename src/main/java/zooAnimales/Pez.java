@@ -12,6 +12,7 @@ public class Pez extends Animal{
 	
 	public Pez(){
 		super();
+		listado.add(this);
 		increaseTotal();
 	}
 	

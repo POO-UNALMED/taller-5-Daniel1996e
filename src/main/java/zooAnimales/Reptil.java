@@ -12,6 +12,7 @@ public class Reptil extends Animal{
 	
 	public Reptil(){
 		super();
+		listado.add(this);
 		increaseTotal();
 	}
 	

@@ -96,5 +96,10 @@ public class Animal {
 		}
 		
 	}
+	public static void main(String[] args) {
+		Zona z1 = new Zona();
+		z1.agregarAnimales(Reptil.crearSerpiente("test", 11, "M"));
+		System.out.println(z1.cantidadAnimales());
+	}
 
 }

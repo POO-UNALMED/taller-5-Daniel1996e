@@ -64,7 +64,7 @@ public class Anfibio extends Animal{
 	}
 	
 	public static int cantidadAnfibios() {
-		return ranas + salamandras + getTotalAnimales();
+		return getTotalAnimales();
 	}
 	
 }

@@ -58,7 +58,7 @@ public class Mamifero extends Animal{
 	}
 	
 	public static int cantidadMamiferos() {
-		return getTotalAnimales();
+		return listado.size();
 	}
 	
 }

@@ -30,6 +30,7 @@ public class Anfibio extends Animal{
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
 		listado.add(this);
+		increaseTotal();
 	}
 	
 	public String getColorPiel() {
@@ -52,7 +53,6 @@ public class Anfibio extends Animal{
 	public static  Anfibio crearRana(String nombre, int edad, String genero) {
 		Anfibio r = new Anfibio(nombre,  edad, "selva" , genero, "rojo" , true);
 		ranas ++;
-		increaseTotal();
 		return r;
 		
 	}
@@ -60,7 +60,6 @@ public class Anfibio extends Animal{
 	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		Anfibio r = new Anfibio(nombre,  edad, "pradera" , genero, "negro y amarillo" , false);
 		salamandras ++;
-		increaseTotal();
 		return r;
 	}
 	

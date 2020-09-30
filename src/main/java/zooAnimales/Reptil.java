@@ -26,6 +26,7 @@ public class Reptil extends Animal{
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
 		listado.add(this);
+		increaseTotal();
 	}
 	
 	public String getColorEscamas() {
@@ -48,14 +49,12 @@ public class Reptil extends Animal{
 	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		Reptil r = new Reptil(nombre,  edad, "humedal" , genero, "verde" , 3);
 		iguanas ++;
-		increaseTotal();
 		return r;
 	}
 	
 	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		Reptil r = new Reptil(nombre,  edad, "jungla" , genero, "blanco" , 1);
 		serpientes ++;
-		increaseTotal();
 		return r;
 	}
 	

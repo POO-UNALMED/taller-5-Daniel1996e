@@ -84,22 +84,16 @@ public class Animal {
 	}
 	public String toString() {
 		if (this.zona != null) {
-			return "Mi nombre es " + this.nombre + ", tengo una edad de " 
-			+ this.edad + ", tengo una edad de " + this.edad + ", habito en"
-			+ this.habitat + "y mi genero es " + this.genero + ", la zona en la que me ubico es "
-			+ this.zona + ", en el " + this.zona.getZoo();
+			return "Mi nombre es " + nombre + ", tengo una edad de " 
+			+ this.edad + ", habito en" + this.habitat + "y mi genero es " 
+			+ genero + ", la zona en la que me ubico es "
+			+ this.zona + ", en el " + zona.getZoo();
 		}
 		else {
-			return "Mi nombre es " + this.nombre + ", tengo una edad de " 
-					+ this.edad + ", tengo una edad de " + this.edad + ", habito en"
-					+ this.habitat + "y mi genero es " + this.genero;
+			return "Mi nombre es " + nombre + ", tengo una edad de " 
+					+ edad + ", habito en " + habitat + " y mi genero es " 
+					+ genero;
 		}
 		
 	}
-	public static void main(String[] args) {
-		Zona z1 = new Zona();
-		z1.agregarAnimales(Reptil.crearSerpiente("test", 11, "M"));
-		System.out.println(z1.cantidadAnimales());
-	}
-
 }

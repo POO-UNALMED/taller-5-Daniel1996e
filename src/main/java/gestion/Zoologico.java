@@ -37,6 +37,10 @@ public class Zoologico {
 		zonas.add(zona);
 	}
 	public int cantidadTotalAnimales() {
-		return Animal.getTotalAnimales();
+		int acc = 0;
+		for (int i = 0; i < zonas.size(); i ++) {
+			acc = acc + zonas.get(i).cantidadAnimales();
+		}
+		return acc;
 	}
 }
